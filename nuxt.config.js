@@ -1,16 +1,18 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: false,
+  target: "static",
   
   nitro: { compressPublicAssets: true },
 
   modules: [
     ['@nuxtjs/tailwindcss'],
+    ['@nuxtjs/color-mode'],
     ['@pinia/nuxt', { autoImports: ['defineStore', 'acceptHMRUpdate'] }]
   ],
 
   imports: {
-    dirs: ['stores'],
+    dirs: ['store'],
   },
 
   css: [

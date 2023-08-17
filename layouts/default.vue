@@ -1,11 +1,11 @@
 <template>
-    <div class="layout__container">
-        <slot />
-    </div>
+  <div class="min-h-screen flex flex-col">
+    <NavBar></NavBar>
+    <slot />
+    <Footer></Footer>
+  </div>
 </template>
-
-<style lang="postcss" scoped>
-.layout__container {
-    @apply bg-red-100;
-}
-</style>
+<script setup>
+import NavBar from "../components/layout/NavBar.vue";
+import Footer from "../components/layout/Footer.vue";
+</script>
