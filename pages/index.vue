@@ -51,7 +51,7 @@ export default {
       </p>
       <div>
         <a
-            href="/resume-alexis.pdf"
+            href="/Resume-Alexis.pdf"
             download=""
             target="_blank"
             class="
