@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "latest",
-    "@pinia/nuxt": "latest",
+    "@pinia/nuxt": "^0.4.11",
     "@vueuse/core": "latest",
     "feather-icons": "^4.29.0",
+    "lite-youtube-embed": "^0.2.0",
     "nuxt": "latest",
-    "pinia": "latest",
+    "pinia": "^2.1.6",
     "uuid": "^9.0.0",
     "vuex": "^4.1.0"
   },

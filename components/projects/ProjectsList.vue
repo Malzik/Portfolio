@@ -1,357 +1,38 @@
-<script>
-
-import {v4 as uuidv4} from "uuid";
+<script setup lang="ts">
 import feather from "feather-icons";
+import {onMounted, onUpdated} from "@vue/runtime-core";
+const store = useMainStore();
 
-export default {
-  data: () => {
-    return {
-      projects: [
-        {
-          id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
-          title: "Traquenard",
-          category: "Mobile Application",
-          img: "traquenard.png",
-          publishDate: "Nov 04, 2021",
-          tag: "UI / Frontend",
-          clientTitle: "About Client",
-          objectivesTitle: "Objective",
-          objectivesDetails:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
-          techTitle: "Tools & Technologies",
-          detailsTitle: "Challenge",
-          socialTitle: "Share This",
-          projectImages: [
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/ui-project-1.jpg",
-            },
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/web-project-1.jpg",
-            },
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/web-project-2.jpg",
-            },
-          ],
-          companyInfos: [
-            {
-              id: uuidv4(),
-              title: "Name",
-              details: "Company Ltd",
-            },
-            {
-              id: uuidv4(),
-              title: "Services",
-              details: "UI Design & Frontend Development",
-            },
-            {
-              id: uuidv4(),
-              title: "Website",
-              details: "https://company.com",
-            },
-            {
-              id: uuidv4(),
-              title: "Phone",
-              details: "555 8888 888",
-            },
-          ],
-          technologies: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Nuxt.js",
-            "TailwindCSS",
-            "AdobeXD",
-          ]
-        },
-        {
-          id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
-          title: "Gamabu",
-          category: "Mobile Application",
-          img: "gamabu.png",
-          publishDate: "Nov 04, 2021",
-          tag: "UI / Frontend",
-          clientTitle: "About Client",
-          objectivesTitle: "Objective",
-          objectivesDetails:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
-          techTitle: "Tools & Technologies",
-          detailsTitle: "Challenge",
-          socialTitle: "Share This",
-          projectImages: [
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/ui-project-1.jpg",
-            },
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/web-project-1.jpg",
-            },
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/web-project-2.jpg",
-            },
-          ],
-          companyInfos: [
-            {
-              id: uuidv4(),
-              title: "Name",
-              details: "Company Ltd",
-            },
-            {
-              id: uuidv4(),
-              title: "Services",
-              details: "UI Design & Frontend Development",
-            },
-            {
-              id: uuidv4(),
-              title: "Website",
-              details: "https://company.com",
-            },
-            {
-              id: uuidv4(),
-              title: "Phone",
-              details: "555 8888 888",
-            },
-          ],
-          technologies: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Nuxt.js",
-            "TailwindCSS",
-            "AdobeXD",
-          ]
-        },
-        {
-          id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
-          title: "Provoly",
-          category: "Mobile Application",
-          img: "provoly.jpg",
-          publishDate: "Nov 04, 2021",
-          tag: "UI / Frontend",
-          clientTitle: "About Client",
-          objectivesTitle: "Objective",
-          objectivesDetails:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
-          techTitle: "Tools & Technologies",
-          detailsTitle: "Challenge",
-          socialTitle: "Share This",
-          projectImages: [
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/ui-project-1.jpg",
-            },
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/web-project-1.jpg",
-            },
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/web-project-2.jpg",
-            },
-          ],
-          companyInfos: [
-            {
-              id: uuidv4(),
-              title: "Name",
-              details: "Company Ltd",
-            },
-            {
-              id: uuidv4(),
-              title: "Services",
-              details: "UI Design & Frontend Development",
-            },
-            {
-              id: uuidv4(),
-              title: "Website",
-              details: "https://company.com",
-            },
-            {
-              id: uuidv4(),
-              title: "Phone",
-              details: "555 8888 888",
-            },
-          ],
-          technologies: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Nuxt.js",
-            "TailwindCSS",
-            "AdobeXD",
-          ]
-        },
-        {
-          id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
-          title: "My money",
-          category: "Mobile Application",
-          img: "mymoney.png",
-          publishDate: "Nov 04, 2021",
-          tag: "UI / Frontend",
-          clientTitle: "About Client",
-          objectivesTitle: "Objective",
-          objectivesDetails:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
-          techTitle: "Tools & Technologies",
-          detailsTitle: "Challenge",
-          socialTitle: "Share This",
-          projectImages: [
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/ui-project-1.jpg",
-            },
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/web-project-1.jpg",
-            },
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/web-project-2.jpg",
-            },
-          ],
-          companyInfos: [
-            {
-              id: uuidv4(),
-              title: "Name",
-              details: "Company Ltd",
-            },
-            {
-              id: uuidv4(),
-              title: "Services",
-              details: "UI Design & Frontend Development",
-            },
-            {
-              id: uuidv4(),
-              title: "Website",
-              details: "https://company.com",
-            },
-            {
-              id: uuidv4(),
-              title: "Phone",
-              details: "555 8888 888",
-            },
-          ],
-          technologies: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Nuxt.js",
-            "TailwindCSS",
-            "AdobeXD",
-          ]
-        },
-        {
-          id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
-          title: "Schedule",
-          category: "Mobile Application",
-          img: "schedule1.jpg",
-          publishDate: "Nov 04, 2021",
-          tag: "UI / Frontend",
-          clientTitle: "About Client",
-          objectivesTitle: "Objective",
-          objectivesDetails:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
-          techTitle: "Tools & Technologies",
-          detailsTitle: "Challenge",
-          socialTitle: "Share This",
-          projectImages: [
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/ui-project-1.jpg",
-            },
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/web-project-1.jpg",
-            },
-            {
-              id: uuidv4(),
-              title: "Uber Project Management UI",
-              img: "../images/web-project-2.jpg",
-            },
-          ],
-          companyInfos: [
-            {
-              id: uuidv4(),
-              title: "Name",
-              details: "Company Ltd",
-            },
-            {
-              id: uuidv4(),
-              title: "Services",
-              details: "UI Design & Frontend Development",
-            },
-            {
-              id: uuidv4(),
-              title: "Website",
-              details: "https://company.com",
-            },
-            {
-              id: uuidv4(),
-              title: "Phone",
-              details: "555 8888 888",
-            },
-          ],
-          technologies: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Nuxt.js",
-            "TailwindCSS",
-            "AdobeXD",
-          ]
-        },
-      ],
-    };
-  },
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
-  },
-};
+onMounted(() => {
+  feather.replace();
+})
+
+onUpdated(() => {
+  feather.replace();
+})
 </script>
 
 <template>
   <!--  projects  -->
   <div class="pt-10 sm:pt-20 md:pt-24">
     <!-- Projects grid header -->
-    <div class="text-center">
+    <div class="text-center" id="projects">
       <p
           class="
-          font-general-semibold
           text-2xl
           sm:text-5xl
           font-semibold
           mb-2
-          text-ternary-dark
-          dark:text-ternary-light
         "
       >
-        Projects portfolio
+        Projects
       </p>
     </div>
     <!-- Projects grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
+<!--    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  items-center">-->
+    <div class="flex justify-around flex-wrap flex-1 mt-6 sm:gap-10">
       <div
-          v-for="project in projects"
+          v-for="project in store.projects"
           :key="project.id"
           class="
           rounded-xl
@@ -362,15 +43,16 @@ export default {
           sm:mb-0
           bg-secondary-light
           dark:bg-ternary-dark
+          w-full sm:w-[20rem]
         "
           aria-label="Single Project"
       >
         <NuxtLink :to="`/projects/${project.id}`">
-          <div>
+          <div class="rounded-t-xl">
             <img
                 :src=project.img
                 :alt="project.title"
-                class="rounded-t-xl border-none w-full h-[300px]"
+                class=" border-none w-full h-[16rem] object-contain"
             />
           </div>
           <div class="text-center px-4 py-6">

@@ -12,12 +12,8 @@ export default defineNuxtConfig({
   ],
 
   imports: {
-    dirs: ['store'],
+    dirs: ['./stores']
   },
-
-  css: [
-    "@/assets/css/base.postcss"
-  ],
 
   app: {
     head: {

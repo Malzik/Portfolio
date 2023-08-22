@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-  <div class="container mx-auto px-3 max-w-screen-xl sm:px-10">
+  <div class="container mx-auto px-3 max-w-screen-xl sm:px-10 list-disc">
     <!--  header  -->
     <div class="flex flex-col items-center text-center">
       <h1
@@ -89,6 +89,31 @@ export default {
       </div>
     </div>
     <ProjectsList></ProjectsList>
+    <div class="text-center pt-20 pb-5">
+      <h1 class="
+          text-2xl
+          sm:text-5xl
+          font-semibold
+          mb-2
+        ">Conferences</h1>
+      <p class="
+          font-medium
+          mt-2
+          text-lg
+          sm:text-xl
+          xl:text-2xl
+          leading-none
+          text-gray-400
+        ">In april, I have presented my first 15 minutes talk about my vision of Tailwind CSS. The talk is in French.</p>
+
+      <div class="flex justify-center py-5">
+        <iframe id="player"
+                class="w-full h-64 md:w-9/12 md:h-96"
+                src="https://www.youtube.com/embed/a-s0CGFAKsU?enablejsapi=1&origin=http://example.com&cc_lang=en"
+                frameborder="0"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
