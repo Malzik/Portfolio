@@ -29,7 +29,7 @@ export default {
           uppercase
         "
       >
-        Hi, I'm Alexis
+        Hi, I'm Alexis <br/>
         welcome on my portfolio!
       </h1>
       <p
@@ -43,7 +43,7 @@ export default {
           text-gray-400
         "
       >
-        I'm a FullStack developer with 4 years of experience in this field. Throughout the various projects I&nbsp;have worked on, I have learned how to work as part of a team, collaborate, and communicate
+        I'm a FullStack developer with more than 4 years of experience in this field. Throughout the various projects I&nbsp;have worked on, I have learned how to work as part of a team, collaborate, and communicate
         effectively.
         I'm highly motivated to learn new things and share the skills I have acquired. I believe that I can be a
         valuable asset in pushing a team forward and, of course, delivering quality output within deadlines.
@@ -58,8 +58,8 @@ export default {
             flex
             justify-center
             items-center
-            w-36
-            sm:w-48
+            w-48
+            sm:w-64
             mt-12
             mb-6
             sm:mb-0
@@ -83,7 +83,7 @@ export default {
               class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"
           ></i>
           <span class="text-sm sm:text-lg font-general-medium duration-100"
-          >Download CV</span
+          >Download Resume</span
           ></a
         >
       </div>
@@ -104,7 +104,7 @@ export default {
           xl:text-2xl
           leading-none
           text-gray-400
-        ">In april, I have presented my first 15 minutes talk about my vision of Tailwind CSS. The talk is in French.</p>
+        ">In April 2023, I have presented my first 15 minutes talk about my vision of Tailwind CSS. The talk is in French.</p>
 
       <div class="flex justify-center py-5">
         <iframe id="player"

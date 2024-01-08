@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   target: "static",
-  
+
   nitro: { compressPublicAssets: true },
 
   modules: [
@@ -17,13 +17,13 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Template',
+      title: 'Portfolio - Alexis Heroin',
       htmlAttrs: { lang: 'en' },
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
       ],
       meta: [
-        { hid: 'description', name: 'description', content: 'Tina Nuxt/Tailwind Template' },
+        { hid: 'description', name: 'description', content: 'Portfolio Alexis Heroin' },
       ]
     }
   }

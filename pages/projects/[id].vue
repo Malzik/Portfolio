@@ -63,7 +63,7 @@ const project = store.getProjectById(route.params.id);
       </div>
 
       <!-- Project gallery -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
+      <div class="grid grid-cols-1 sm:gap-10 mt-12" :class="project.gridCss">
         <div
             class="mb-10 sm:mb-0"
             v-for="projectImage in project.projectImages"
@@ -124,6 +124,17 @@ const project = store.getProjectById(route.params.id);
               "
             >
               {{ project.technologies.join(", ") }}
+            </p>
+          </div>
+
+          <!-- Single project technologies -->
+          <div class="mb-7" v-if="project.socialUrl">
+            <p
+                class="
+                font-general-regular
+              "
+            >
+              <a :href="project.socialUrl" class="text-[#0066cc]">{{ project.socialUrl }}</a>
             </p>
           </div>
         </div>

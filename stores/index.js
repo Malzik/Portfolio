@@ -5,6 +5,52 @@ export const useMainStore = defineStore('main', {
     state: () => ({
         projects: [
             {
+                id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccde",
+                title: "Flag of the Day",
+                category: "Web Game",
+                img: "fotd/title.PNG",
+                publishDate: "Dec 2023",
+                tag: "UI / Frontend / API",
+                clientTitle: "About Client",
+                objectivesTitle: "Objective",
+                objectivesDetails:
+                    "The objective of this project was to train my skills on Go and React",
+                projectDetails: [
+                    "Flag of the Day is a geography game. This is an idea inspired by Wordle",
+                    "The goal of this game is to find 3 countries with their flags. We can play the game one time each day. The objectives is to build the biggest streak and to train and learn the different flags in the world"
+                ],
+                techTitle: "Tools & Technologies",
+                detailsTitle: "Description",
+                socialTitle: "Link:",
+                socialUrl: "https://flags.alexis-heroin.ca/",
+                gridCss: "sm:grid-cols-4",
+                projectImages: [
+                    {
+                        title: "Home page",
+                        img: "fotd/home.PNG",
+                    },
+                    {
+                        title: "Game screen",
+                        img: "fotd/game.PNG",
+                    },
+                    {
+                        title: "Victory page",
+                        img: "fotd/victory.PNG",
+                    },
+                    {
+                        title: "Loose page",
+                        img: "fotd/loose.PNG",
+                    }
+                ],
+                technologies: [
+                    "HTML",
+                    "CSS",
+                    "TypeScript",
+                    "React",
+                    "Go - Gin",
+                ]
+            },
+            {
                 id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccda",
                 title: "Traquenard",
                 category: "Mobile Application",
@@ -15,14 +61,15 @@ export const useMainStore = defineStore('main', {
                 objectivesDetails:
                     "The objective of this project was to discover React Native, Expo and how to publish an application to the Play store",
                 techTitle: "Tools & Technologies",
-                detailsTitle: "Challenge",
-                socialTitle: "Share This",
+                detailsTitle: "Description",
+                socialUrl: "https://play.google.com/store/apps/details?id=com.traquenard.corp",
                 projectDetails: [
                     "Traquenard is a React native game for Android and IOS (only on Android for now). I worked on this project with one of my friend for 2 years as a side-project. The project use Redux to share data between the components. We have two available languages: French and English. On this project I learned how React Native and Expo works, how to create an application and take care of screen size problem or how to add advertising revenue.",
                     "This project is on hold for now because we are happy with the result  and want to focus on other things.",
                     "Presentation of the game:",
                     "<h1>Party games with friends (Between 3 and 8 for a better experience)</h1>Each player plays in turn and will have the choice between 4 proposals.<ul class='p-2 pl-8 list-disc'><li>Duel: Choose another player to play against him during a challenge</li><li>Friendship: Choose another player to play with him during a challenge</li><li>Question: Question of general knowledge</li><li>Alone VS All: Challenge against all other players</li></ul>Each proposal earns points.<br/>At the end of each proposal, points will be awarded and the player with the most points at the end of the game wins!"
                 ],
+                gridCss: "sm:grid-cols-3",
                 projectImages: [
                     {
                         title: "Menu",
@@ -58,13 +105,15 @@ export const useMainStore = defineStore('main', {
                 objectivesDetails:
                     "My objective on this project was to discover how a medium size project works (12-20 persons)",
                 techTitle: "Tools & Technologies",
-                detailsTitle: "Challenge",
+                detailsTitle: "Description",
                 socialTitle: "Share This",
+                socialUrl: "https://www.gamabu.com/",
                 projectDetails: [
                     "Gamabu is the serious games brand and application of onepoint. The goal of the games is to remove the classic training way where you just listen to someone. Instead, the employee can play the game and learn without really notice it. On this project, I worked on the game engine and the API part.",
                     "The API is a Laravel project, this is also my first big project in my life. That was my first time using this framework and I have the chance to work with expert people who passed on their experience and skills to me",
                     "On this project, I also learn Docker, Gitlab CI/CD, AWS S3 and Lambda. At the end of my intervention on the project, I was responsible for the DevOps part."
                 ],
+                gridCss: "sm:grid-cols-3",
                 projectImages: [
                     {
                         title: "Cybershield intro",
@@ -108,8 +157,10 @@ export const useMainStore = defineStore('main', {
                     "During my time with Provoly, I had the chance to trained to be a Tech Lead by the expert."
                 ],
                 techTitle: "Tools & Technologies",
-                detailsTitle: "Challenge",
+                detailsTitle: "Description",
                 socialTitle: "Share This",
+                socialUrl: "https://www.provoly.com/",
+                gridCss: "sm:grid-cols-3",
                 projectImages: [
                     {
                         title: "Img carbon",
@@ -145,8 +196,9 @@ export const useMainStore = defineStore('main', {
                     "Since Java take too much resources for a small project like this. I am currently rewriting the backend with Go."
                 ],
                 techTitle: "Tools & Technologies",
-                detailsTitle: "Challenge",
+                detailsTitle: "Description",
                 socialTitle: "Share This",
+                gridCss: "sm:grid-cols-3",
                 projectImages: [
                     {
                         title: "My money interface",
